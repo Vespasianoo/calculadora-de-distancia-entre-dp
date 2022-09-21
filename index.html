@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Vespasiano">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="description" content="Calcule a distancia entre dois pontos">
+    <meta name="keywords" content="calcular, distância entre dois pontos, matemática, calculadora">
+    
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <title>Distância entre dois pontos | Calculadora</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Distância entre dois pontos</h1>
+        <form class="main__">
+            <div class="main__input">
+                <input type="number"  id="valueXb" class="clean" placeholder="Digite o valor de ( Xb )">
+            </div>
+
+            <div class="main__input">
+                <input type="number" id="valueXa" class="clean" placeholder="Digite o valor de ( Xa )" >
+            </div>
+
+            <div class="main__input">
+                <input type="number" id="valueYb" class="clean" placeholder="Digite o valor de ( Yb )" >
+            </div>
+
+            <div class="main__input">
+                <input type="number" id="valueYa" class="clean" placeholder="Digite o valor de ( Ya )" >
+            </div>
+
+            <div class="btn">
+                <button id="calcular" type="submit" onclick="Calculate()" >Calcular</button>
+                <button id="limpar" type="reset" onclick="Clean">Limpar</button>
+            </div>
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
