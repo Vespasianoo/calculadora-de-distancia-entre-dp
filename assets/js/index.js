@@ -1,3 +1,6 @@
+const btnCalcular = document.getElementById("calcular")
+const btnLimpar = document.getElementById("limpar")
+
 function Calculate() {
     let valueXb = parseInt(document.getElementById("valueXb").value)
     let valueXa = parseInt(document.getElementById("valueXa").value)
@@ -31,15 +34,6 @@ function Clean() {
 
 
 
- 
-const btnCalcular = document.getElementById("calcular")
-const btnLimpar = document.getElementById("limpar")
-
-function Clean() {
-
-    document.getElementById("result").innerHTML = ""
-}
-
 btnCalcular.addEventListener("click", (evento) =>{
     evento.preventDefault();
 
@@ -50,7 +44,3 @@ function Clean() {
     document.getElementById("result").innerHTML = ""
 }
   
-limpar.addEventListener("click", () => {
-    Clean()
-})
-
