@@ -1,5 +1,5 @@
 const btnCalcular = document.getElementById("calcular")
-const btnLimpar = document.getElementById("limpar")
+
 
 function Calculate() {
     let valueXb = parseInt(document.getElementById("valueXb").value)
@@ -44,3 +44,4 @@ function Clean() {
     document.getElementById("result").innerHTML = ""
 }
   
+
